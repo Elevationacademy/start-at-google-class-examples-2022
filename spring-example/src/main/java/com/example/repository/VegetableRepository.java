@@ -21,7 +21,7 @@ public class VegetableRepository {
 
     public List<Vegetable> filterByType(Vegetable.Type type){
         return vegetables.stream().filter(veg -> veg.getType() == type).collect(Collectors.toList());
-    }git
+    }
 
     public void deleteByType(Vegetable.Type type){
         vegetables.removeAll(filterByType(type));
